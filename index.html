@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detection System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/indexbackgroud.png'); 
+            background-size:cover;
+            background-attachment:fixed;
+            background-position: center;
+            /* background-position:0px 60px; */
+            background-repeat: no-repeat;
+        }
+        nav {
+            background-color: #bc0074;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: large;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 30px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        .logo {
+            color: white;
+            font-weight: bold;
+        }
+        nav a::before,
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        nav a:hover::before {
+            width: 100%;
+        }
+        nav a::after {
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+        }
+        .btn-container {
+            position: relative;
+        }
+        .btn {
+            position: absolute; 
+            top: 610px; 
+            left: 350px; 
+            display: inline-block;
+            padding: 20px 30px;
+            background-color: white;
+            color: #d41a8c;
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-weight: bold;
+            position: 0px 60px;
+        }
+        .btn:hover {
+            background-color: #d41a8c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="logo">AI - BCDS Deep Learning</span>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="team.html" class="team">Team</a>
+            <a href="Project Details.pdf" class="project-details">Project Details</a>
+        </div>
+    </nav>
+    <button class="btn" onclick="window.location.href='https://bcmodel.satyasreekar.in/'">Upload The Scans</button>
+</body>
+</html>

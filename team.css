@@ -1,0 +1,109 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #bc0074;
+    font-size: large;
+}
+
+.team-members-container {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.team-members-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Display list items as flex items */
+    flex-wrap: wrap; /* Wrap items to next line if necessary */
+    justify-content: center; /* Center items horizontally */
+}
+
+.team-member {
+    margin: 60px 65px; /* Add spacing between team members */
+    text-align: center; /* Align content within each team member */
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h2 {
+    margin-top: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Navigation bar */
+nav {
+    background-color: #bc0074;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: yellow;
+}
+.logo {
+    color: white;
+    font-weight: bold;
+}
+nav a::before,
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+nav a:hover::before {
+    width: 100%;
+}
+nav a::after {
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+}
