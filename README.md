@@ -2,6 +2,8 @@
 
 This readme file contains project details and information about the team members involved in the AI - BCDS Deep Learning project.
 
+Project can be accessed by using this link --- https://sreecharan2027.github.io/AI---BCDS-Deep-Learning.github.io/ 
+
 ## Project Description
 
 We have created a breast cancer diagnosis system powered by Deep learning that is both highly accurate and readily available using sonar images. The model will quickly and precisely scan and analyze sonar images using advanced deep learning algorithms.
